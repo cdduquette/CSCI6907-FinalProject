@@ -1,21 +1,22 @@
 #!/bin/bash
 cd ../Player-Data
+rm Input*
 
-for PARTIES in {0..$0}
+for PARTIES in {0..3}
 do 
     FILENAME="Input-P${PARTIES}-0"
     touch $FILENAME
 
-    GENDER=$(($RANDOM % 2))
+    GENDER=$(($RANDOM % 3))
     echo $GENDER >> $FILENAME
 
-    CREDITLINE=$(python -S -c "import random; print random.randrange(500,50000)")
-    echo $CREDITLINE >> $FILENAME
+    CREDITLINE=$(shuf -i 50-500 -n 1)
+    echo ${CREDITLINE}00 >> $FILENAME
 
-    for i in {0..$((1 + $RANDOM % 12))}
+    STMTS=$((1 + $RANDOM % 12))
+    for i in $( seq 0 $STMTS )
     do
-        UTILIZATION=$(python -S -c "import random; print random.randrange(0,${CREDITLINE})")
-        echo $UTILIZATION >> $FILENAME
+        echo $(shuf -i 50-${CREDITLINE}00 -n 1) >> $FILENAME
     done
 
 done
