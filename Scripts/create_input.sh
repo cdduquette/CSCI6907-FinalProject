@@ -14,8 +14,8 @@ do
     echo ${CREDITLINE}00 >> $FILENAME
 
     # STMTS=$((1 + $RANDOM % 12))
-    STMTS=12
-    for i in $( seq 0 $STMTS )
+    STMTS=3
+    for i in $( seq 1 $STMTS )
     do
         echo $(shuf -i 50-${CREDITLINE}00 -n 1) >> $FILENAME
     done
