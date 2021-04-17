@@ -1,0 +1,69 @@
+# Initializing constants
+NUM_PLAYERS=2
+NUM_MS_GIVEN=13
+GENDER_INDEX=0
+CL_INDEX=1
+MS_START_INDEX=2
+
+NUM_INPUT=NUM_MS_GIVEN+2
+
+# Setting the precision
+sfix.set_precision(16, 32)
+
+# Inputing Data in Matrix
+print_ln('Inputing Data')
+input_data = Matrix(NUM_INPUT, NUM_PLAYERS, sfix)
+
+for p in range(NUM_PLAYERS):
+    for i in range(NUM_INPUT):
+        input_data[i][p] = sfix.get_input_from(p)
+
+# Calulating Monthly Utilizations per Player
+print_ln('Calculating Monthly utilization')
+monthly_utlization_data = Matrix(2, NUM_PLAYERS, sfix)
+
+for p in range(NUM_PLAYERS):
+    monthly_utlization_data[GENDER_INDEX][p] = input_data[GENDER_INDEX][p] # copying over gender
+    creditline=input_data[CL_INDEX][p]
+
+    mu=0
+    for ms in range(MS_START_INDEX, NUM_INPUT):
+        mu = mu + (input_data[ms][p] / creditline)
+
+    monthly_utlization_data[1][p] = mu
+
+# sum the secret shares for all players by gender
+print_ln('Summing data by gender')
+
+# [
+#    numOfThatGender, sumOfUtilizations, averageForThatGender 
+# ] 
+gender_data = Matrix(3, 3, sfix) 
+
+for p in range(NUM_PLAYERS):
+    @if_((monthly_utlization_data[0][p] == 0).reveal())
+    def _():
+        gender_data[0][0] = gender_data[0][0] + 1
+        gender_data[1][0] = gender_data[1][0] + monthly_utlization_data[1][p]
+    
+    @if_((monthly_utlization_data[0][p] == 1).reveal())
+    def _():
+        gender_data[0][1] = gender_data[0][1] + 1
+        gender_data[1][1] = gender_data[1][1] + monthly_utlization_data[1][p]
+    
+    @if_((monthly_utlization_data[0][p] == 2).reveal())
+    def _():
+        gender_data[0][2] = gender_data[0][2] + 1
+        gender_data[1][2] = gender_data[1][2] + monthly_utlization_data[1][p]
+
+
+# divide sum by total gender count
+print_ln('Calculating Averages')
+for g in range(3):
+    gender_data[2][g] = gender_data[1][g] / gender_data[0][g]
+
+
+# print out final average by gender
+print_ln('Output:')
+for g in range(3):        
+    print_ln('For gender, %s, the average credit utilization is %s', g, gender_data[2][g].reveal())

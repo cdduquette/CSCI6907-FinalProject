@@ -5,7 +5,7 @@ UTILIZATION_0 = 0
 UTILIZATION_1 = 0
 UTILIZATION_2 = 0
 
-for P in range(0,4):
+for P in range(0,2):
     input_file = open("../Player-Data/Input-P{0}-0".format(P))
     Lines = input_file.read().splitlines()
 
@@ -33,8 +33,8 @@ for P in range(0,4):
 
 AVERAGE_0 = UTILIZATION_0 / GENDER_0
 AVERAGE_1 = UTILIZATION_1 / GENDER_1
-AVERAGE_2 = UTILIZATION_2 / GENDER_2
+# AVERAGE_2 = UTILIZATION_2 / GENDER_2
 
 print("Gender_0 count is {0} with a total utilization of {1} and an average utilization of {2}".format(GENDER_0, UTILIZATION_0, AVERAGE_0))
-print("Gender_1 count is {0} with a total utilization of {1} and an average utilization of {2}".format(GENDER_1, UTILIZATION_1, AVERAGE_2))
-print("Gender_2 count is {0} with a total utilization of {1}  and an average utilization of {2}".format(GENDER_2, UTILIZATION_2, AVERAGE_2))
+print("Gender_1 count is {0} with a total utilization of {1} and an average utilization of {2}".format(GENDER_1, UTILIZATION_1, AVERAGE_1))
+# print("Gender_2 count is {0} with a total utilization of {1}  and an average utilization of {2}".format(GENDER_2, UTILIZATION_2, AVERAGE_2))

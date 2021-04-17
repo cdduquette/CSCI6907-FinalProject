@@ -13,7 +13,8 @@ do
     CREDITLINE=$(shuf -i 50-500 -n 1)
     echo ${CREDITLINE}00 >> $FILENAME
 
-    STMTS=$((1 + $RANDOM % 12))
+    # STMTS=$((1 + $RANDOM % 12))
+    STMTS=12
     for i in $( seq 0 $STMTS )
     do
         echo $(shuf -i 50-${CREDITLINE}00 -n 1) >> $FILENAME
