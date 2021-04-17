@@ -1,0 +1,24 @@
+# Initializing constants
+NUM_PLAYERS=2
+NUM_MS_GIVEN=3
+GENDER_INDEX=0
+CL_INDEX=1
+MS_START_INDEX=2
+
+NUM_INPUT=NUM_MS_GIVEN+2
+
+# Inputing Data in Matrix
+print_ln('Inputing Data')
+
+# Calulating Monthly Utilizations per Player
+print_ln('Calculating Monthly utilization')
+
+# sum the secret shares for all players by gender
+print_ln('Summing data by gender')
+
+# divide sum by total gender count
+print_ln('Calculating Averages')
+
+
+# print out final average by gender
+print_ln('Output:')
