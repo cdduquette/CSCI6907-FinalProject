@@ -1,0 +1,54 @@
+# Initializing constants
+NUM_PLAYERS=2
+NUM_INPUT=2
+
+sfix.set_precision(16, 32) # Setting the precision
+
+# Inputing Data in Matrix
+print_ln('Inputing Data')
+
+# [
+#    gender, sumOfThatPlayersUtilizations 
+# ] 
+input_data = Matrix(NUM_INPUT, NUM_PLAYERS, sfix)
+
+for p in range(NUM_PLAYERS):
+    for i in range(NUM_INPUT):
+        input_data[i][p] = sfix.get_input_from(p)
+
+# sum the secret shares for all players by gender
+print_ln('Summing data by gender')
+
+# [
+#    numOfThatGender, sumOfUtilizations, averageForThatGender 
+# ] 
+gender_data = Matrix(3, 3, sfix) 
+
+for p in range(NUM_PLAYERS):
+    @if_((input_data[0][p] == 0).reveal())
+    def _():
+        gender_data[0][0] = gender_data[0][0] + 1
+        gender_data[1][0] = gender_data[1][0] + input_data[1][p]
+    
+    @if_((input_data[0][p] == 1).reveal())
+    def _():
+        gender_data[0][1] = gender_data[0][1] + 1
+        gender_data[1][1] = gender_data[1][1] + input_data[1][p]
+    
+    @if_((input_data[0][p] == 2).reveal())
+    def _():
+        gender_data[0][2] = gender_data[0][2] + 1
+        gender_data[1][2] = gender_data[1][2] + input_data[1][p]
+
+
+# divide sum by total gender count
+print_ln('Calculating Averages')
+
+for g in range(3):
+    gender_data[2][g] = gender_data[1][g] / gender_data[0][g]
+
+
+# print out final average by gender
+print_ln('Output:')
+for g in range(3):        
+    print_ln('For gender, %s, the average credit utilization is %s', g, gender_data[2][g])

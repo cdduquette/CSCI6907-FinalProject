@@ -7,8 +7,7 @@ MS_START_INDEX=2
 
 NUM_INPUT=NUM_MS_GIVEN+2
 
-# Setting the precision
-sfix.set_precision(16, 32)
+sfix.set_precision(16, 32) # Setting the precision
 
 # Inputing Data in Matrix
 print_ln('Inputing Data')
