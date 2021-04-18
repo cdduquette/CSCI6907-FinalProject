@@ -51,4 +51,4 @@ for g in range(3):
 # print out final average by gender
 print_ln('Output:')
 for g in range(3):        
-    print_ln('For gender, %s, the average credit utilization is %s', g, gender_data[2][g])
+    print_ln('For gender, %s, the average credit utilization is %s', g, gender_data[2][g].reveal())
