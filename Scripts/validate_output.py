@@ -1,4 +1,10 @@
 #! /usr/bin/python
+import sys
+from datetime import datetime
+
+start_time = datetime.now()
+
+end_index = int(sys.argv[1])
 
 GENDER_0 = 0
 GENDER_1 = 0
@@ -10,7 +16,7 @@ AVERAGE_0 = 0
 AVERAGE_1 = 0
 AVERAGE_2 = 0
 
-for P in range(0,2):
+for P in range(0,end_index):
     input_file = open("../Player-Data/Input-P{0}-0".format(P))
     Lines = input_file.read().splitlines()
 
@@ -43,4 +49,7 @@ if GENDER_2 > 0:
 
 print("Gender_0 count is {0} with a total utilization of {1} and an average utilization of {2}".format(GENDER_0, UTILIZATION_0, AVERAGE_0))
 print("Gender_1 count is {0} with a total utilization of {1} and an average utilization of {2}".format(GENDER_1, UTILIZATION_1, AVERAGE_1))
-print("Gender_2 count is {0} with a total utilization of {1}  and an average utilization of {2}".format(GENDER_2, UTILIZATION_2, AVERAGE_2))
+print("Gender_2 count is {0} with a total utilization of {1} and an average utilization of {2}".format(GENDER_2, UTILIZATION_2, AVERAGE_2))
+
+end_time = datetime.now()
+print('Total Time to Preprocess Data: ' + str(end_time - start_time))
