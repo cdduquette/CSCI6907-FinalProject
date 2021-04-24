@@ -6,50 +6,35 @@ start_time = datetime.now()
 
 end_index = int(sys.argv[1])
 
-GENDER_0 = 0
-GENDER_1 = 0
-GENDER_2 = 0
-UTILIZATION_0 = 0
-UTILIZATION_1 = 0
-UTILIZATION_2 = 0
-AVERAGE_0 = 0
-AVERAGE_1 = 0
-AVERAGE_2 = 0
+GENDERS = [0, 0, 0]
+UTILIZATIONS = [0, 0, 0]
+AVERAGES = [0, 0, 0]
 
 for P in range(0,end_index):
     input_file = open("../Player-Data/Input-P{0}-0".format(P))
     Lines = input_file.read().splitlines()
 
-    gender = Lines[0]
-    if gender == '0':
-        GENDER_0+=1
-    if gender == '1':
-        GENDER_1+=1
-    if gender == '2':
-        GENDER_2+=1
+    gender = int(Lines[0])
+    GENDERS[gender] +=1
 
     creditline = Lines[1]
 
+    UTILIZATION = 0
+    num_of_months = 0
+
     for l in range(2, len(Lines)):
         util = int(Lines[l]) / int(creditline)
+        UTILIZATION+=util
+        num_of_months+=1
 
-        if gender == '0':
-            UTILIZATION_0+=util
-        if gender == '1':
-            UTILIZATION_1+=util
-        if gender == '2':
-            UTILIZATION_2+=util
+    UTILIZATIONS[gender] = UTILIZATION / num_of_months
 
-if GENDER_0 > 0:
-    AVERAGE_0 = UTILIZATION_0 / GENDER_0
-if GENDER_1 > 0:
-    AVERAGE_1 = UTILIZATION_1 / GENDER_1
-if GENDER_2 > 0:
-    AVERAGE_2 = UTILIZATION_2 / GENDER_2
-
-print("Gender_0 count is {0} with a total utilization of {1} and an average utilization of {2}".format(GENDER_0, UTILIZATION_0, AVERAGE_0))
-print("Gender_1 count is {0} with a total utilization of {1} and an average utilization of {2}".format(GENDER_1, UTILIZATION_1, AVERAGE_1))
-print("Gender_2 count is {0} with a total utilization of {1} and an average utilization of {2}".format(GENDER_2, UTILIZATION_2, AVERAGE_2))
+for i in range(len(GENDERS)):
+    if (GENDERS[i] > 0):
+        AVERAGES[i] = UTILIZATIONS[i] / GENDERS[i]
+        
+for i in range(len(GENDERS)):
+    print("Gender {0} count is {1} with a total utilization of {2} and an average utilization of {3}".format(i, GENDERS[i], UTILIZATIONS[i], AVERAGES[i]))
 
 end_time = datetime.now()
 print('Total Time to Preprocess Data: ' + str(end_time - start_time))

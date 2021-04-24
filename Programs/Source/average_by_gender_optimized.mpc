@@ -29,7 +29,7 @@ for p in range(NUM_PLAYERS):
     for ms in range(MS_START_INDEX, NUM_INPUT):
         mu = mu + (input_data[ms][p] / creditline)
 
-    monthly_utlization_data[1][p] = mu
+    monthly_utlization_data[1][p] = mu / NUM_MS_GIVEN
 
 # sum the secret shares for all players by gender
 print_ln('Summing data by gender')
