@@ -1,4 +1,6 @@
-create_input
+create_input and SSL
+Setting up SSL for 10 parties
+Doing Player-Data
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 -------------------------------------------------------------------
@@ -7,7 +9,7 @@ average_by_gender_all_secured - semi-honest
 Default bit length: 64
 Default security parameter: 40
 Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_all_secured.mpc
-Compiled 100000 lines at Sun Apr 25 14:13:50 2021
+Compiled 100000 lines at Sun Apr 25 16:27:47 2021
 Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_all_secured.sch
 Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_all_secured-0.bc
 Program requires:
@@ -30,10 +32,10 @@ Calculating Monthly utilization
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0.440414
-For gender, 1, the average credit utilization is 0.507568
-For gender, 2, the average credit utilization is 0.432144
-Time = 61.3014 seconds 
+For gender, 0, the average credit utilization is 0.467072
+For gender, 1, the average credit utilization is 0.475067
+For gender, 2, the average credit utilization is 0.517517
+Time = 28.6869 seconds 
 Data sent = 32.103 MB
 Global data sent = 311.998 MB
 -------------------------------------------------------------------
@@ -41,7 +43,7 @@ average_by_gender_optimized - semi-honest
 Default bit length: 64
 Default security parameter: 40
 Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_optimized.mpc
-Compiled 100000 lines at Sun Apr 25 14:15:03 2021
+Compiled 100000 lines at Sun Apr 25 16:28:27 2021
 Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_optimized.sch
 Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_optimized-0.bc
 Program requires:
@@ -64,10 +66,10 @@ Calculating Monthly utilization
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0.440384
-For gender, 1, the average credit utilization is 0.507568
-For gender, 2, the average credit utilization is 0.432129
-Time = 64.7018 seconds 
+For gender, 0, the average credit utilization is 0.467041
+For gender, 1, the average credit utilization is 0.475037
+For gender, 2, the average credit utilization is 0.517532
+Time = 23.4092 seconds 
 Data sent = 26.1944 MB
 Global data sent = 251.619 MB
 -------------------------------------------------------------------
@@ -76,7 +78,7 @@ average_by_gender_all_secured - malicious
 Default bit length: 64
 Default security parameter: 40
 Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_all_secured.mpc
-Compiled 100000 lines at Sun Apr 25 14:16:25 2021
+Compiled 100000 lines at Sun Apr 25 16:29:01 2021
 Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_all_secured.sch
 Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_all_secured-0.bc
 Program requires:
@@ -99,10 +101,10 @@ Calculating Monthly utilization
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0.440399
-For gender, 1, the average credit utilization is 0.507599
-For gender, 2, the average credit utilization is 0.432129
-Time = 150.793 seconds 
+For gender, 0, the average credit utilization is 0.467072
+For gender, 1, the average credit utilization is 0.475052
+For gender, 2, the average credit utilization is 0.517532
+Time = 64.7595 seconds 
 Data sent = 67.0812 MB
 Global data sent = 650.652 MB
 -------------------------------------------------------------------
@@ -110,7 +112,7 @@ average_by_gender_optimized - malicious
 Default bit length: 64
 Default security parameter: 40
 Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_optimized.mpc
-Compiled 100000 lines at Sun Apr 25 14:19:13 2021
+Compiled 100000 lines at Sun Apr 25 16:30:16 2021
 Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_optimized.sch
 Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_optimized-0.bc
 Program requires:
@@ -133,10 +135,10 @@ Calculating Monthly utilization
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0.440384
-For gender, 1, the average credit utilization is 0.507568
-For gender, 2, the average credit utilization is 0.432129
-Time = 124.523 seconds 
+For gender, 0, the average credit utilization is 0.467041
+For gender, 1, the average credit utilization is 0.475037
+For gender, 2, the average credit utilization is 0.517532
+Time = 67.9681 seconds 
 Data sent = 56.8162 MB
 Global data sent = 548.002 MB
 -------------------------------------------------------------------
@@ -144,7 +146,7 @@ Global data sent = 548.002 MB
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 preprocess_code
-Total Time to Preprocess Data: 0:00:00.001294
+Total Time to Preprocess Data: 0:00:00.001422
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 average_by_gender_preprocessing_all_secured - semi-honest
@@ -172,10 +174,10 @@ Inputing Data
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0.440384
-For gender, 1, the average credit utilization is 0.507553
-For gender, 2, the average credit utilization is 0.432144
-Time = 15.0545 seconds 
+For gender, 0, the average credit utilization is 0.467041
+For gender, 1, the average credit utilization is 0.475052
+For gender, 2, the average credit utilization is 0.517517
+Time = 7.99355 seconds 
 Data sent = 7.48799 MB
 Global data sent = 61.6391 MB
 -------------------------------------------------------------------
@@ -204,10 +206,10 @@ Inputing Data
 Summing data by gender
 Calculating Averages in Clear
 Output:
-For gender, 0, the average credit utilization is 0.440369
-For gender, 1, the average credit utilization is 0.507553
-For gender, 2, the average credit utilization is 0.432114
-Time = 14.5793 seconds 
+For gender, 0, the average credit utilization is 0.467026
+For gender, 1, the average credit utilization is 0.475021
+For gender, 2, the average credit utilization is 0.517517
+Time = 7.82112 seconds 
 Data sent = 7.33938 MB
 Global data sent = 60.2999 MB
 -------------------------------------------------------------------
@@ -237,10 +239,10 @@ Inputing Data
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0.440384
-For gender, 1, the average credit utilization is 0.507568
-For gender, 2, the average credit utilization is 0.432129
-Time = 41.7264 seconds 
+For gender, 0, the average credit utilization is 0.467056
+For gender, 1, the average credit utilization is 0.475052
+For gender, 2, the average credit utilization is 0.517532
+Time = 20.9861 seconds 
 Data sent = 18.1137 MB
 Global data sent = 163.857 MB
 -------------------------------------------------------------------
@@ -269,9 +271,9 @@ Inputing Data
 Summing data by gender
 Calculating Averages in Clear
 Output:
-For gender, 0, the average credit utilization is 0.440369
-For gender, 1, the average credit utilization is 0.507553
-For gender, 2, the average credit utilization is 0.432114
-Time = 37.258 seconds 
+For gender, 0, the average credit utilization is 0.467026
+For gender, 1, the average credit utilization is 0.475021
+For gender, 2, the average credit utilization is 0.517517
+Time = 19.8349 seconds 
 Data sent = 17.8491 MB
 Global data sent = 161.211 MB

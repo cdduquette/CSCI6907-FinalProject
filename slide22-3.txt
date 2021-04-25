@@ -1,4 +1,6 @@
-create_input
+create_input and SSL
+Setting up SSL for 3 parties
+Doing Player-Data
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 -------------------------------------------------------------------
@@ -22,10 +24,10 @@ Calculating Monthly utilization
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0
-For gender, 1, the average credit utilization is 0.196198
-For gender, 2, the average credit utilization is 0.324661
-Time = 0.558441 seconds 
+For gender, 0, the average credit utilization is 0.475769
+For gender, 1, the average credit utilization is 0.290161
+For gender, 2, the average credit utilization is 0
+Time = 0.406746 seconds 
 Data sent = 1.10793 MB
 Global data sent = 3.64378 MB
 -------------------------------------------------------------------
@@ -48,10 +50,10 @@ Calculating Monthly utilization
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0
-For gender, 1, the average credit utilization is 0.196167
-For gender, 2, the average credit utilization is 0.324646
-Time = 0.51532 seconds 
+For gender, 0, the average credit utilization is 0.475754
+For gender, 1, the average credit utilization is 0.290161
+For gender, 2, the average credit utilization is 0
+Time = 0.73117 seconds 
 Data sent = 1.07486 MB
 Global data sent = 3.54457 MB
 -------------------------------------------------------------------
@@ -75,10 +77,10 @@ Calculating Monthly utilization
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0
-For gender, 1, the average credit utilization is 0.196167
-For gender, 2, the average credit utilization is 0.324661
-Time = 2.25643 seconds 
+For gender, 0, the average credit utilization is 0.475784
+For gender, 1, the average credit utilization is 0.290161
+For gender, 2, the average credit utilization is 0
+Time = 1.43943 seconds 
 Data sent = 5.25584 MB
 Global data sent = 16.0875 MB
 -------------------------------------------------------------------
@@ -101,10 +103,10 @@ Calculating Monthly utilization
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0
-For gender, 1, the average credit utilization is 0.196167
-For gender, 2, the average credit utilization is 0.324661
-Time = 2.15222 seconds 
+For gender, 0, the average credit utilization is 0.475754
+For gender, 1, the average credit utilization is 0.290176
+For gender, 2, the average credit utilization is 0
+Time = 2.29654 seconds 
 Data sent = 5.1897 MB
 Global data sent = 15.8891 MB
 -------------------------------------------------------------------
@@ -112,7 +114,7 @@ Global data sent = 15.8891 MB
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 preprocess_code
-Total Time to Preprocess Data: 0:00:00.000938
+Total Time to Preprocess Data: 0:00:00.000415
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 average_by_gender_preprocessing_all_secured - semi-honest
@@ -133,10 +135,10 @@ Inputing Data
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0
-For gender, 1, the average credit utilization is 0.196182
-For gender, 2, the average credit utilization is 0.324661
-Time = 0.27814 seconds 
+For gender, 0, the average credit utilization is 0.475769
+For gender, 1, the average credit utilization is 0.290146
+For gender, 2, the average credit utilization is 0
+Time = 0.716417 seconds 
 Data sent = 0.682664 MB
 Global data sent = 1.72799 MB
 -------------------------------------------------------------------
@@ -158,10 +160,10 @@ Inputing Data
 Summing data by gender
 Calculating Averages in Clear
 Output:
-For gender, 0, the average credit utilization is 0
-For gender, 1, the average credit utilization is 0.196152
-For gender, 2, the average credit utilization is 0.324631
-Time = 0.25592 seconds 
+For gender, 0, the average credit utilization is 0.475739
+For gender, 1, the average credit utilization is 0.290131
+For gender, 2, the average credit utilization is 0
+Time = 0.165279 seconds 
 Data sent = 0.649592 MB
 Global data sent = 1.62878 MB
 -------------------------------------------------------------------
@@ -184,10 +186,10 @@ Inputing Data
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0
-For gender, 1, the average credit utilization is 0.196167
-For gender, 2, the average credit utilization is 0.324646
-Time = 1.44514 seconds 
+For gender, 0, the average credit utilization is 0.475769
+For gender, 1, the average credit utilization is 0.290146
+For gender, 2, the average credit utilization is 0
+Time = 0.895583 seconds 
 Data sent = 3.6053 MB
 Global data sent = 10.4959 MB
 -------------------------------------------------------------------
@@ -209,9 +211,9 @@ Inputing Data
 Summing data by gender
 Calculating Averages in Clear
 Output:
-For gender, 0, the average credit utilization is 0
-For gender, 1, the average credit utilization is 0.196152
-For gender, 2, the average credit utilization is 0.324631
-Time = 1.4193 seconds 
+For gender, 0, the average credit utilization is 0.475739
+For gender, 1, the average credit utilization is 0.290131
+For gender, 2, the average credit utilization is 0
+Time = 0.871273 seconds 
 Data sent = 3.53916 MB
 Global data sent = 10.2975 MB
