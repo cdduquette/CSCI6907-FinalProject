@@ -1,7 +1,7 @@
 #! /usr/bin/python
 import sys, os, random
 
-os.chdir('../Player-Data/')
+os.chdir('Player-Data/')
 
 num_stmts = int(sys.argv[1])
 end_index = int(sys.argv[2])

@@ -27,7 +27,10 @@ for P in range(0,end_index):
         UTILIZATION+=util
         num_of_months+=1
 
-    UTILIZATIONS[gender] = UTILIZATION / num_of_months
+    UTILIZATIONS[gender] += UTILIZATION / num_of_months
+
+    print('For player, {0}, the count is {1}, the sum is {2}'.format( P, num_of_months, UTILIZATION))
+
 
 for i in range(len(GENDERS)):
     if (GENDERS[i] > 0):

@@ -8,7 +8,7 @@ start_index = int(sys.argv[1])
 end_index = int(sys.argv[2])
 
 for P in range(start_index, end_index):
-    fileName = "../Player-Data/Input-P{0}-0".format(P)
+    fileName = "Player-Data/Input-P{0}-0".format(P)
     input_file = open(fileName, "r+")
     Lines = input_file.read().splitlines()
 
