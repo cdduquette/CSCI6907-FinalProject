@@ -1,5 +1,5 @@
 # Initializing constants
-NUM_PLAYERS=50
+NUM_PLAYERS=25
 NUM_INPUT=2
 
 sfix.set_precision(16, 32) # Setting the precision

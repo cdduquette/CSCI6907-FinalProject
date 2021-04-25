@@ -1,9 +1,9 @@
 #! /bin/bash
 
 echo create_input and SSL
-python3 Scripts/create_input.py 3 50
+python3 Scripts/create_input.py 3 25
 
-../mp-spdz-0.2.3/Scripts/setup-ssl.sh 50
+../mp-spdz-0.2.3/Scripts/setup-ssl.sh 25
 
 echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------
@@ -39,7 +39,7 @@ echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------
 
 echo preprocess_code
-python3 Scripts/preprocess_code.py 0 50
+python3 Scripts/preprocess_code.py 0 25
 
 echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------

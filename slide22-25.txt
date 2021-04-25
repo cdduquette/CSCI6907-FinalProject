@@ -1,0 +1,154 @@
+create_input and SSL
+Setting up SSL for 25 parties
+Doing Player-Data
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+average_by_gender_all_secured - semi-honest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_all_secured.mpc
+Compiled 100000 lines at Sun Apr 25 14:52:09 2021
+Compiled 200000 lines at Sun Apr 25 14:52:10 2021
+Compiled 300000 lines at Sun Apr 25 14:52:12 2021
+Compiled 400000 lines at Sun Apr 25 14:52:13 2021
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_all_secured.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_all_secured-0.bc
+Program requires:
+           5 integer inputs from player 0
+           5 integer inputs from player 1
+           5 integer inputs from player 2
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+           5 integer inputs from player 5
+           5 integer inputs from player 6
+           5 integer inputs from player 7
+           5 integer inputs from player 8
+           5 integer inputs from player 9
+           5 integer inputs from player 10
+           5 integer inputs from player 11
+           5 integer inputs from player 12
+           5 integer inputs from player 13
+           5 integer inputs from player 14
+           5 integer inputs from player 15
+           5 integer inputs from player 16
+           5 integer inputs from player 17
+           5 integer inputs from player 18
+           5 integer inputs from player 19
+           5 integer inputs from player 20
+           5 integer inputs from player 21
+           5 integer inputs from player 22
+           5 integer inputs from player 23
+           5 integer inputs from player 24
+      101970 integer bits
+       30270 integer triples
+        1660 virtual machine rounds
+No modulus found in Player-Data//25-Sp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Calculating Monthly utilization
+Summing data by gender
+Calculating Averages
+Output:
+For gender, 0, the average credit utilization is 0.537582
+For gender, 1, the average credit utilization is 0.376999
+For gender, 2, the average credit utilization is 0.46933
+Time = 475.249 seconds 
+Data sent = 78.4534 MB
+Global data sent = 1961.34 MB
+-------------------------------------------------------------------
+average_by_gender_optimized - semi-honest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_optimized.mpc
+Compiled 100000 lines at Sun Apr 25 15:00:31 2021
+Compiled 200000 lines at Sun Apr 25 15:00:33 2021
+Compiled 300000 lines at Sun Apr 25 15:00:34 2021
+Compiled 400000 lines at Sun Apr 25 15:00:36 2021
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_optimized.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_optimized-0.bc
+Program requires:
+           5 integer inputs from player 0
+           5 integer inputs from player 1
+           5 integer inputs from player 2
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+           5 integer inputs from player 5
+           5 integer inputs from player 6
+           5 integer inputs from player 7
+           5 integer inputs from player 8
+           5 integer inputs from player 9
+           5 integer inputs from player 10
+           5 integer inputs from player 11
+           5 integer inputs from player 12
+           5 integer inputs from player 13
+           5 integer inputs from player 14
+           5 integer inputs from player 15
+           5 integer inputs from player 16
+           5 integer inputs from player 17
+           5 integer inputs from player 18
+           5 integer inputs from player 19
+           5 integer inputs from player 20
+           5 integer inputs from player 21
+           5 integer inputs from player 22
+           5 integer inputs from player 23
+           5 integer inputs from player 24
+       98625 integer bits
+       29250 integer triples
+        1627 virtual machine rounds
+No modulus found in Player-Data//25-Sp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Calculating Monthly utilization
+Summing data by gender
+Calculating Averages
+Output:
+For gender, 0, the average credit utilization is 0.537552
+For gender, 1, the average credit utilization is 0.376984
+For gender, 2, the average credit utilization is 0.469299
+Time = 433.313 seconds 
+Data sent = 72.0009 MB
+Global data sent = 1800.02 MB
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+average_by_gender_all_secured - malicious
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_all_secured.mpc
+Compiled 100000 lines at Sun Apr 25 15:08:12 2021
+Compiled 200000 lines at Sun Apr 25 15:08:14 2021
+Compiled 300000 lines at Sun Apr 25 15:08:16 2021
+Compiled 400000 lines at Sun Apr 25 15:08:18 2021
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_all_secured.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_all_secured-0.bc
+Program requires:
+           5 integer inputs from player 0
+           5 integer inputs from player 1
+           5 integer inputs from player 2
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+           5 integer inputs from player 5
+           5 integer inputs from player 6
+           5 integer inputs from player 7
+           5 integer inputs from player 8
+           5 integer inputs from player 9
+           5 integer inputs from player 10
+           5 integer inputs from player 11
+           5 integer inputs from player 12
+           5 integer inputs from player 13
+           5 integer inputs from player 14
+           5 integer inputs from player 15
+           5 integer inputs from player 16
+           5 integer inputs from player 17
+           5 integer inputs from player 18
+           5 integer inputs from player 19
+           5 integer inputs from player 20
+           5 integer inputs from player 21
+           5 integer inputs from player 22
+           5 integer inputs from player 23
+           5 integer inputs from player 24
+      101970 integer bits
+       30270 integer triples
+        1660 virtual machine rounds
+No modulus found in Player-Data//25-MSp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Calculating Monthly utilization
