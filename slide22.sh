@@ -1,9 +1,9 @@
 #! /bin/bash
 
 echo create_input and SSL
-python3 Scripts/create_input.py 3 10
+python3 Scripts/create_input.py 3 20
 
-../mp-spdz-0.2.3/Scripts/setup-ssl.sh 10
+../mp-spdz-0.2.3/Scripts/setup-ssl.sh 20
 
 echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------
@@ -23,15 +23,15 @@ echo average_by_gender_optimized - semi-honest
 echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------
 
-echo average_by_gender_all_secured - malicious
-../mp-spdz-0.2.3/compile.py average_by_gender_all_secured.mpc
-../mp-spdz-0.2.3/Scripts/mal-shamir.sh average_by_gender_all_secured
+# echo average_by_gender_all_secured - malicious
+# ../mp-spdz-0.2.3/compile.py average_by_gender_all_secured.mpc
+# ../mp-spdz-0.2.3/Scripts/mal-shamir.sh average_by_gender_all_secured
 
-echo -------------------------------------------------------------------
+# echo -------------------------------------------------------------------
 
-echo average_by_gender_optimized  - malicious
-../mp-spdz-0.2.3/compile.py average_by_gender_optimized.mpc
-../mp-spdz-0.2.3/Scripts/mal-shamir.sh average_by_gender_optimized
+# echo average_by_gender_optimized  - malicious
+# ../mp-spdz-0.2.3/compile.py average_by_gender_optimized.mpc
+# ../mp-spdz-0.2.3/Scripts/mal-shamir.sh average_by_gender_optimized
 
 echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------
@@ -39,7 +39,7 @@ echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------
 
 echo preprocess_code
-python3 Scripts/preprocess_code.py 0 10
+python3 Scripts/preprocess_code.py 0 20
 
 echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------
