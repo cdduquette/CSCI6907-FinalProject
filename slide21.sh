@@ -1,31 +1,25 @@
 #! /bin/bash
 
-echo create_input and SSL
-<<<<<<< HEAD
-python3 Scripts/create_input.py 3 5
+# echo create_input and SSL
+# python3 Scripts/create_input.py 3 5
 
-../mp-spdz-0.2.3/Scripts/setup-ssl.sh 5
-=======
-python3 Scripts/create_input.py 3 3
+# ../mp-spdz-0.2.3/Scripts/setup-ssl.sh 5
 
-../mp-spdz-0.2.3/Scripts/setup-ssl.sh 3
->>>>>>> 0782a7af6991790fed3f8744677816e0d16c6def
+# echo -------------------------------------------------------------------
+# echo -------------------------------------------------------------------
+# echo -------------------------------------------------------------------
+# echo -------------------------------------------------------------------
 
-echo -------------------------------------------------------------------
-echo -------------------------------------------------------------------
-echo -------------------------------------------------------------------
-echo -------------------------------------------------------------------
+# echo average_by_gender_all_secured - honest
+# ../mp-spdz-0.2.3/compile.py average_by_gender_all_secured.mpc
+# ../mp-spdz-0.2.3/Scripts/mal-shamir.sh average_by_gender_all_secured
+# sleep 150
+# echo -------------------------------------------------------------------
 
-echo average_by_gender_all_secured - honest
-../mp-spdz-0.2.3/compile.py average_by_gender_all_secured.mpc
-../mp-spdz-0.2.3/Scripts/mal-shamir.sh average_by_gender_all_secured
-sleep 150
-echo -------------------------------------------------------------------
-
-echo average_by_gender_optimized - honest
-../mp-spdz-0.2.3/compile.py average_by_gender_optimized.mpc
-../mp-spdz-0.2.3/Scripts/mal-shamir.sh average_by_gender_optimized
-sleep 150
+# echo average_by_gender_optimized - honest
+# ../mp-spdz-0.2.3/compile.py average_by_gender_optimized.mpc
+# ../mp-spdz-0.2.3/Scripts/mal-shamir.sh average_by_gender_optimized
+# sleep 150
 echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------
 
@@ -45,11 +39,7 @@ echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------
 
 echo preprocess_code
-<<<<<<< HEAD
 python3 Scripts/preprocess_code.py 0 5
-=======
-python3 Scripts/preprocess_code.py 0 3
->>>>>>> 0782a7af6991790fed3f8744677816e0d16c6def
 
 echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------
