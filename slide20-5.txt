@@ -1,5 +1,5 @@
 create_input and SSL
-Setting up SSL for 3 parties
+Setting up SSL for 5 parties
 Doing Player-Data
 -------------------------------------------------------------------
 -------------------------------------------------------------------
@@ -9,27 +9,30 @@ average_by_gender_all_secured - honest
 Default bit length: 64
 Default security parameter: 40
 Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_all_secured.mpc
+Compiled 100000 lines at Mon Apr 26 07:42:48 2021
 Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_all_secured.sch
 Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_all_secured-0.bc
 Program requires:
            5 integer inputs from player 0
            5 integer inputs from player 1
            5 integer inputs from player 2
-       15180 integer bits
-        4530 integer triples
-         230 virtual machine rounds
-No modulus found in Player-Data//3-Sp-128/Params-Data, generating 128-bit prime
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+       23070 integer bits
+        6870 integer triples
+         360 virtual machine rounds
+No modulus found in Player-Data//5-Sp-128/Params-Data, generating 128-bit prime
 Inputing Data
 Calculating Monthly utilization
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0.650238
-For gender, 1, the average credit utilization is 0
-For gender, 2, the average credit utilization is 0.531494
-Time = 0.770233 seconds 
-Data sent = 1.10793 MB
-Global data sent = 3.64378 MB
+For gender, 0, the average credit utilization is 0.310516
+For gender, 1, the average credit utilization is 0.521988
+For gender, 2, the average credit utilization is 0
+Time = 2.83085 seconds 
+Data sent = 4.92837 MB
+Global data sent = 27.2018 MB
 -------------------------------------------------------------------
 average_by_gender_optimized - honest
 Default bit length: 64
@@ -41,48 +44,52 @@ Program requires:
            5 integer inputs from player 0
            5 integer inputs from player 1
            5 integer inputs from player 2
-       11835 integer bits
-        3510 integer triples
-         197 virtual machine rounds
-No modulus found in Player-Data//3-Sp-128/Params-Data, generating 128-bit prime
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+       19725 integer bits
+        5850 integer triples
+         327 virtual machine rounds
+No modulus found in Player-Data//5-Sp-128/Params-Data, generating 128-bit prime
 Inputing Data
 Calculating Monthly utilization
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0.650192
-For gender, 1, the average credit utilization is 0
-For gender, 2, the average credit utilization is 0.531479
-Time = 0.701304 seconds 
-Data sent = 1.07486 MB
-Global data sent = 3.54457 MB
--------------------------------------------------------------------
+For gender, 0, the average credit utilization is 0.310486
+For gender, 1, the average credit utilization is 0.522003
+For gender, 2, the average credit utilization is 0
+Time = 2.40429 seconds 
+Data sent = 3.58222 MB
+Global data sent = 18.5511 MB
 -------------------------------------------------------------------
 average_by_gender_all_secured - dishonest
 Default bit length: 64
 Default security parameter: 40
 Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_all_secured.mpc
+Compiled 100000 lines at Mon Apr 26 07:50:31 2021
 Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_all_secured.sch
 Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_all_secured-0.bc
 Program requires:
            5 integer inputs from player 0
            5 integer inputs from player 1
            5 integer inputs from player 2
-       15180 integer bits
-        4530 integer triples
-         230 virtual machine rounds
-No modulus found in Player-Data//3-Dp-128/Params-Data, generating 128-bit prime
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+       23070 integer bits
+        6870 integer triples
+         360 virtual machine rounds
+No modulus found in Player-Data//5-Dp-128/Params-Data, generating 128-bit prime
 Inputing Data
 Calculating Monthly utilization
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0.650238
-For gender, 1, the average credit utilization is 0
-For gender, 2, the average credit utilization is 0.531494
-Time = 20.6485 seconds 
-Data sent = 306.299 MB
-Global data sent = 916.555 MB
+For gender, 0, the average credit utilization is 0.310516
+For gender, 1, the average credit utilization is 0.521988
+For gender, 2, the average credit utilization is 0
+Time = 176.488 seconds 
+Data sent = 1704.03 MB
+Global data sent = 8480.62 MB
 -------------------------------------------------------------------
 average_by_gender_optimized - dishonest
 Default bit length: 64
@@ -94,27 +101,29 @@ Program requires:
            5 integer inputs from player 0
            5 integer inputs from player 1
            5 integer inputs from player 2
-       11835 integer bits
-        3510 integer triples
-         197 virtual machine rounds
-No modulus found in Player-Data//3-Dp-128/Params-Data, generating 128-bit prime
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+       19725 integer bits
+        5850 integer triples
+         327 virtual machine rounds
+No modulus found in Player-Data//5-Dp-128/Params-Data, generating 128-bit prime
 Inputing Data
 Calculating Monthly utilization
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0.650208
-For gender, 1, the average credit utilization is 0
-For gender, 2, the average credit utilization is 0.531494
-Time = 15.5033 seconds 
-Data sent = 231.792 MB
-Global data sent = 693.61 MB
+For gender, 0, the average credit utilization is 0.310501
+For gender, 1, the average credit utilization is 0.521988
+For gender, 2, the average credit utilization is 0
+Time = 146.308 seconds 
+Data sent = 1422.79 MB
+Global data sent = 7080.94 MB
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 preprocess_code
-Total Time to Preprocess Data: 0:00:00.002563
+Total Time to Preprocess Data: 0:00:00.003421
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 average_by_gender_preprocessing_all_secured - honest
@@ -127,20 +136,22 @@ Program requires:
            2 integer inputs from player 0
            2 integer inputs from player 1
            2 integer inputs from player 2
-        3993 integer bits
-        1299 integer triples
-          98 virtual machine rounds
-No modulus found in Player-Data//3-Sp-128/Params-Data, generating 128-bit prime
+           2 integer inputs from player 3
+           2 integer inputs from player 4
+        4425 integer bits
+        1485 integer triples
+         140 virtual machine rounds
+No modulus found in Player-Data//5-Sp-128/Params-Data, generating 128-bit prime
 Inputing Data
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0.650208
-For gender, 1, the average credit utilization is 0
-For gender, 2, the average credit utilization is 0.531494
-Time = 0.697027 seconds 
-Data sent = 0.682664 MB
-Global data sent = 1.72799 MB
+For gender, 0, the average credit utilization is 0.310501
+For gender, 1, the average credit utilization is 0.521988
+For gender, 2, the average credit utilization is 0
+Time = 1.50532 seconds 
+Data sent = 2.01762 MB
+Global data sent = 8.80808 MB
 -------------------------------------------------------------------
 average_by_gender_preprocessing_optimized - honest
 Default bit length: 64
@@ -152,20 +163,22 @@ Program requires:
            2 integer inputs from player 0
            2 integer inputs from player 1
            2 integer inputs from player 2
-         648 integer bits
-         279 integer triples
-          65 virtual machine rounds
-No modulus found in Player-Data//3-Sp-128/Params-Data, generating 128-bit prime
+           2 integer inputs from player 3
+           2 integer inputs from player 4
+        1080 integer bits
+         465 integer triples
+         107 virtual machine rounds
+No modulus found in Player-Data//5-Sp-128/Params-Data, generating 128-bit prime
 Inputing Data
 Summing data by gender
 Calculating Averages in Clear
 Output:
-For gender, 0, the average credit utilization is 0.650177
-For gender, 1, the average credit utilization is 0
-For gender, 2, the average credit utilization is 0.531464
-Time = 0.5961 seconds 
-Data sent = 0.649592 MB
-Global data sent = 1.62878 MB
+For gender, 0, the average credit utilization is 0.310486
+For gender, 1, the average credit utilization is 0.521973
+For gender, 2, the average credit utilization is 0
+Time = 1.11058 seconds 
+Data sent = 1.95147 MB
+Global data sent = 8.47736 MB
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 average_by_gender_preprocessing_all_secured - dishonest
@@ -178,20 +191,22 @@ Program requires:
            2 integer inputs from player 0
            2 integer inputs from player 1
            2 integer inputs from player 2
-        3993 integer bits
-        1299 integer triples
-          98 virtual machine rounds
-No modulus found in Player-Data//3-Dp-128/Params-Data, generating 128-bit prime
+           2 integer inputs from player 3
+           2 integer inputs from player 4
+        4425 integer bits
+        1485 integer triples
+         140 virtual machine rounds
+No modulus found in Player-Data//5-Dp-128/Params-Data, generating 128-bit prime
 Inputing Data
 Summing data by gender
 Calculating Averages
 Output:
-For gender, 0, the average credit utilization is 0.650177
-For gender, 1, the average credit utilization is 0
-For gender, 2, the average credit utilization is 0.531479
-Time = 5.94779 seconds 
-Data sent = 82.7639 MB
-Global data sent = 247.695 MB
+For gender, 0, the average credit utilization is 0.310501
+For gender, 1, the average credit utilization is 0.521988
+For gender, 2, the average credit utilization is 0
+Time = 37.5778 seconds 
+Data sent = 363.957 MB
+Global data sent = 1811.52 MB
 -------------------------------------------------------------------
 average_by_gender_preprocessing_optimized - dishonest
 Default bit length: 64
@@ -203,17 +218,19 @@ Program requires:
            2 integer inputs from player 0
            2 integer inputs from player 1
            2 integer inputs from player 2
-         648 integer bits
-         279 integer triples
-          65 virtual machine rounds
-No modulus found in Player-Data//3-Dp-128/Params-Data, generating 128-bit prime
+           2 integer inputs from player 3
+           2 integer inputs from player 4
+        1080 integer bits
+         465 integer triples
+         107 virtual machine rounds
+No modulus found in Player-Data//5-Dp-128/Params-Data, generating 128-bit prime
 Inputing Data
 Summing data by gender
 Calculating Averages in Clear
 Output:
-For gender, 0, the average credit utilization is 0.650177
-For gender, 1, the average credit utilization is 0
-For gender, 2, the average credit utilization is 0.531464
-Time = 1.9117 seconds 
-Data sent = 24.8164 MB
-Global data sent = 74.3025 MB
+For gender, 0, the average credit utilization is 0.310486
+For gender, 1, the average credit utilization is 0.521973
+For gender, 2, the average credit utilization is 0
+Time = 15.2129 seconds 
+Data sent = 148.892 MB
+Global data sent = 741.2 MB

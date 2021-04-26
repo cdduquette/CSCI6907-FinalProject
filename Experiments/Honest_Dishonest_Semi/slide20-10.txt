@@ -1,0 +1,134 @@
+create_input and SSL
+Setting up SSL for 10 parties
+Doing Player-Data
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+average_by_gender_all_secured - honest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_all_secured.mpc
+Compiled 100000 lines at Sun Apr 25 20:45:03 2021
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_all_secured.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_all_secured-0.bc
+Program requires:
+           5 integer inputs from player 0
+           5 integer inputs from player 1
+           5 integer inputs from player 2
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+           5 integer inputs from player 5
+           5 integer inputs from player 6
+           5 integer inputs from player 7
+           5 integer inputs from player 8
+           5 integer inputs from player 9
+       42795 integer bits
+       12720 integer triples
+         685 virtual machine rounds
+No modulus found in Player-Data//10-Sp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Calculating Monthly utilization
+Summing data by gender
+Calculating Averages
+Output:
+For gender, 0, the average credit utilization is 0.517334
+For gender, 1, the average credit utilization is 0.369598
+For gender, 2, the average credit utilization is 0.461746
+Time = 39.4397 seconds 
+Data sent = 32.103 MB
+Global data sent = 311.998 MB
+-------------------------------------------------------------------
+average_by_gender_optimized - honest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_optimized.mpc
+Compiled 100000 lines at Sun Apr 25 20:48:29 2021
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_optimized.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_optimized-0.bc
+Program requires:
+           5 integer inputs from player 0
+           5 integer inputs from player 1
+           5 integer inputs from player 2
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+           5 integer inputs from player 5
+           5 integer inputs from player 6
+           5 integer inputs from player 7
+           5 integer inputs from player 8
+           5 integer inputs from player 9
+       39450 integer bits
+       11700 integer triples
+         652 virtual machine rounds
+No modulus found in Player-Data//10-Sp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Calculating Monthly utilization
+Summing data by gender
+Calculating Averages
+Output:
+For gender, 0, the average credit utilization is 0.517303
+For gender, 1, the average credit utilization is 0.369553
+For gender, 2, the average credit utilization is 0.461731
+Time = 30.6167 seconds 
+Data sent = 26.1944 MB
+Global data sent = 251.619 MB
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+average_by_gender_all_secured - dishonest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_all_secured.mpc
+Compiled 100000 lines at Sun Apr 25 21:07:21 2021
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_all_secured.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_all_secured-0.bc
+Program requires:
+           5 integer inputs from player 0
+           5 integer inputs from player 1
+           5 integer inputs from player 2
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+           5 integer inputs from player 5
+           5 integer inputs from player 6
+           5 integer inputs from player 7
+           5 integer inputs from player 8
+           5 integer inputs from player 9
+       42795 integer bits
+       12720 integer triples
+         685 virtual machine rounds
+No modulus found in Player-Data//10-Dp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Calculating Monthly utilization
+Summing data by gender
+Calculating Averages
+Output:
+For gender, 0, the average credit utilization is 0.517319
+For gender, 1, the average credit utilization is 0.369583
+For gender, 2, the average credit utilization is 0.461761
+Time = 3145.87 seconds 
+Data sent = 14881.9 MB
+Global data sent = 147897 MB
+-------------------------------------------------------------------
+average_by_gender_optimized - dishonest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_optimized.mpc
+Compiled 100000 lines at Mon Apr 26 07:20:54 2021
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_optimized.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_optimized-0.bc
+Program requires:
+           5 integer inputs from player 0
+           5 integer inputs from player 1
+           5 integer inputs from player 2
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+           5 integer inputs from player 5
+           5 integer inputs from player 6
+           5 integer inputs from player 7
+           5 integer inputs from player 8
+           5 integer inputs from player 9
+       39450 integer bits
+       11700 integer triples
+         652 virtual machine rounds
+No modulus found in Player-Data//10-Dp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Calculating Monthly utilization
