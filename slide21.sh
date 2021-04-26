@@ -1,9 +1,15 @@
 #! /bin/bash
 
 echo create_input and SSL
+<<<<<<< HEAD
 python3 Scripts/create_input.py 3 5
 
 ../mp-spdz-0.2.3/Scripts/setup-ssl.sh 5
+=======
+python3 Scripts/create_input.py 3 3
+
+../mp-spdz-0.2.3/Scripts/setup-ssl.sh 3
+>>>>>>> 0782a7af6991790fed3f8744677816e0d16c6def
 
 echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------
@@ -39,7 +45,11 @@ echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------
 
 echo preprocess_code
+<<<<<<< HEAD
 python3 Scripts/preprocess_code.py 0 5
+=======
+python3 Scripts/preprocess_code.py 0 3
+>>>>>>> 0782a7af6991790fed3f8744677816e0d16c6def
 
 echo -------------------------------------------------------------------
 echo -------------------------------------------------------------------
