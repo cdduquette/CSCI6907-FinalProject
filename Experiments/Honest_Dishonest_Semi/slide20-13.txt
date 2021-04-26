@@ -1,0 +1,307 @@
+create_input and SSL
+Setting up SSL for 13 parties
+Doing Player-Data
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+average_by_gender_all_secured - honest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_all_secured.mpc
+Compiled 100000 lines at Mon Apr 26 11:01:18 2021
+Compiled 200000 lines at Mon Apr 26 11:01:20 2021
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_all_secured.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_all_secured-0.bc
+Program requires:
+           5 integer inputs from player 0
+           5 integer inputs from player 1
+           5 integer inputs from player 2
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+           5 integer inputs from player 5
+           5 integer inputs from player 6
+           5 integer inputs from player 7
+           5 integer inputs from player 8
+           5 integer inputs from player 9
+           5 integer inputs from player 10
+           5 integer inputs from player 11
+           5 integer inputs from player 12
+       54630 integer bits
+       16230 integer triples
+         880 virtual machine rounds
+No modulus found in Player-Data//13-Sp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Calculating Monthly utilization
+Summing data by gender
+Calculating Averages
+Output:
+For gender, 0, the average credit utilization is 0.589935
+For gender, 1, the average credit utilization is 0.493988
+For gender, 2, the average credit utilization is 0.328308
+Time = 123.676 seconds 
+Data sent = 74.2152 MB
+Global data sent = 1020.48 MB
+-------------------------------------------------------------------
+average_by_gender_optimized - honest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_optimized.mpc
+Compiled 100000 lines at Mon Apr 26 11:06:06 2021
+Compiled 200000 lines at Mon Apr 26 11:06:08 2021
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_optimized.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_optimized-0.bc
+Program requires:
+           5 integer inputs from player 0
+           5 integer inputs from player 1
+           5 integer inputs from player 2
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+           5 integer inputs from player 5
+           5 integer inputs from player 6
+           5 integer inputs from player 7
+           5 integer inputs from player 8
+           5 integer inputs from player 9
+           5 integer inputs from player 10
+           5 integer inputs from player 11
+           5 integer inputs from player 12
+       51285 integer bits
+       15210 integer triples
+         847 virtual machine rounds
+No modulus found in Player-Data//13-Sp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Calculating Monthly utilization
+Summing data by gender
+Calculating Averages
+Output:
+For gender, 0, the average credit utilization is 0.589905
+For gender, 1, the average credit utilization is 0.493973
+For gender, 2, the average credit utilization is 0.328278
+Time = 133.041 seconds 
+Data sent = 74.0168 MB
+Global data sent = 1017.9 MB
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+average_by_gender_all_secured - dishonest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_all_secured.mpc
+Compiled 100000 lines at Mon Apr 26 11:11:02 2021
+Compiled 200000 lines at Mon Apr 26 11:11:04 2021
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_all_secured.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_all_secured-0.bc
+Program requires:
+           5 integer inputs from player 0
+           5 integer inputs from player 1
+           5 integer inputs from player 2
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+           5 integer inputs from player 5
+           5 integer inputs from player 6
+           5 integer inputs from player 7
+           5 integer inputs from player 8
+           5 integer inputs from player 9
+           5 integer inputs from player 10
+           5 integer inputs from player 11
+           5 integer inputs from player 12
+       54630 integer bits
+       16230 integer triples
+         880 virtual machine rounds
+No modulus found in Player-Data//13-Dp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Calculating Monthly utilization
+Summing data by gender
+Calculating Averages
+Output:
+For gender, 0, the average credit utilization is 0.58992
+For gender, 1, the average credit utilization is 0.493988
+For gender, 2, the average credit utilization is 0.328278
+Time = 9101.84 seconds 
+Data sent = 33514.8 MB
+Global data sent = 433679 MB
+-------------------------------------------------------------------
+average_by_gender_optimized - dishonest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_optimized.mpc
+Compiled 100000 lines at Mon Apr 26 13:45:28 2021
+Compiled 200000 lines at Mon Apr 26 13:45:30 2021
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_optimized.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_optimized-0.bc
+Program requires:
+           5 integer inputs from player 0
+           5 integer inputs from player 1
+           5 integer inputs from player 2
+           5 integer inputs from player 3
+           5 integer inputs from player 4
+           5 integer inputs from player 5
+           5 integer inputs from player 6
+           5 integer inputs from player 7
+           5 integer inputs from player 8
+           5 integer inputs from player 9
+           5 integer inputs from player 10
+           5 integer inputs from player 11
+           5 integer inputs from player 12
+       51285 integer bits
+       15210 integer triples
+         847 virtual machine rounds
+No modulus found in Player-Data//13-Dp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Calculating Monthly utilization
+Summing data by gender
+Calculating Averages
+Output:
+For gender, 0, the average credit utilization is 0.589905
+For gender, 1, the average credit utilization is 0.493973
+For gender, 2, the average credit utilization is 0.328262
+Time = 8474.98 seconds 
+Data sent = 31683.1 MB
+Global data sent = 409977 MB
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+preprocess_code
+Total Time to Preprocess Data: 0:00:00.005779
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+average_by_gender_preprocessing_all_secured - honest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_preprocessing_all_secured.mpc
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_preprocessing_all_secured.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_preprocessing_all_secured-0.bc
+Program requires:
+           2 integer inputs from player 0
+           2 integer inputs from player 1
+           2 integer inputs from player 2
+           2 integer inputs from player 3
+           2 integer inputs from player 4
+           2 integer inputs from player 5
+           2 integer inputs from player 6
+           2 integer inputs from player 7
+           2 integer inputs from player 8
+           2 integer inputs from player 9
+           2 integer inputs from player 10
+           2 integer inputs from player 11
+           2 integer inputs from player 12
+        6153 integer bits
+        2229 integer triples
+         308 virtual machine rounds
+No modulus found in Player-Data//13-Sp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Summing data by gender
+Calculating Averages
+Output:
+For gender, 0, the average credit utilization is 0.58992
+For gender, 1, the average credit utilization is 0.493988
+For gender, 2, the average credit utilization is 0.328278
+Time = 18.9709 seconds 
+Data sent = 13.8803 MB
+Global data sent = 168.924 MB
+-------------------------------------------------------------------
+average_by_gender_preprocessing_optimized - honest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_preprocessing_optimized.mpc
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_preprocessing_optimized.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_preprocessing_optimized-0.bc
+Program requires:
+           2 integer inputs from player 0
+           2 integer inputs from player 1
+           2 integer inputs from player 2
+           2 integer inputs from player 3
+           2 integer inputs from player 4
+           2 integer inputs from player 5
+           2 integer inputs from player 6
+           2 integer inputs from player 7
+           2 integer inputs from player 8
+           2 integer inputs from player 9
+           2 integer inputs from player 10
+           2 integer inputs from player 11
+           2 integer inputs from player 12
+        2808 integer bits
+        1209 integer triples
+         275 virtual machine rounds
+No modulus found in Player-Data//13-Sp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Summing data by gender
+Calculating Averages in Clear
+Output:
+For gender, 0, the average credit utilization is 0.58989
+For gender, 1, the average credit utilization is 0.493958
+For gender, 2, the average credit utilization is 0.328262
+Time = 17.8773 seconds 
+Data sent = 13.6819 MB
+Global data sent = 166.344 MB
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+average_by_gender_preprocessing_all_secured - dishonest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_preprocessing_all_secured.mpc
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_preprocessing_all_secured.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_preprocessing_all_secured-0.bc
+Program requires:
+           2 integer inputs from player 0
+           2 integer inputs from player 1
+           2 integer inputs from player 2
+           2 integer inputs from player 3
+           2 integer inputs from player 4
+           2 integer inputs from player 5
+           2 integer inputs from player 6
+           2 integer inputs from player 7
+           2 integer inputs from player 8
+           2 integer inputs from player 9
+           2 integer inputs from player 10
+           2 integer inputs from player 11
+           2 integer inputs from player 12
+        6153 integer bits
+        2229 integer triples
+         308 virtual machine rounds
+No modulus found in Player-Data//13-Dp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Summing data by gender
+Calculating Averages
+Output:
+For gender, 0, the average credit utilization is 0.589905
+For gender, 1, the average credit utilization is 0.493973
+For gender, 2, the average credit utilization is 0.328293
+Time = 1183.1 seconds 
+Data sent = 4306.92 MB
+Global data sent = 55733.1 MB
+-------------------------------------------------------------------
+average_by_gender_preprocessing_optimized - dishonest
+Default bit length: 64
+Default security parameter: 40
+Compiling file /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Source/average_by_gender_preprocessing_optimized.mpc
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Schedules/average_by_gender_preprocessing_optimized.sch
+Writing to /home/ubuntu/Documents/CSCI6907-FinalProject/Programs/Bytecode/average_by_gender_preprocessing_optimized-0.bc
+Program requires:
+           2 integer inputs from player 0
+           2 integer inputs from player 1
+           2 integer inputs from player 2
+           2 integer inputs from player 3
+           2 integer inputs from player 4
+           2 integer inputs from player 5
+           2 integer inputs from player 6
+           2 integer inputs from player 7
+           2 integer inputs from player 8
+           2 integer inputs from player 9
+           2 integer inputs from player 10
+           2 integer inputs from player 11
+           2 integer inputs from player 12
+        2808 integer bits
+        1209 integer triples
+         275 virtual machine rounds
+No modulus found in Player-Data//13-Dp-128/Params-Data, generating 128-bit prime
+Inputing Data
+Summing data by gender
+Calculating Averages in Clear
+Output:
+For gender, 0, the average credit utilization is 0.58989
+For gender, 1, the average credit utilization is 0.493958
+For gender, 2, the average credit utilization is 0.328262
+Time = 512.609 seconds 
+Data sent = 1881.17 MB
+Global data sent = 24344.4 MB
